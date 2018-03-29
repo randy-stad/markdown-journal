@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ContentService } from '../services/content.service';
+
 @Component({
   selector: 'app-preview',
   templateUrl: './preview.component.html',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PreviewComponent implements OnInit {
 
-  constructor() { }
+  constructor(public contentService: ContentService) { }
 
   ngOnInit() {
   }
