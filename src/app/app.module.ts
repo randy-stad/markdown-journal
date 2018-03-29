@@ -1,16 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ClarityModule } from '@clr/angular';
+import { MarkdownModule } from 'ngx-md';
 
 import { AppComponent } from './app.component';
+import { PreviewCardComponent } from './preview-card/preview-card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PreviewCardComponent
   ],
   imports: [
     BrowserModule,
-    ClarityModule
+    ClarityModule,
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [
