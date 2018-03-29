@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ClarityModule } from '@clr/angular';
-import { CovalentTextEditorModule } from '@covalent/text-editor';
 
 import { AppComponent } from './app.component';
 
@@ -11,8 +10,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    ClarityModule,
-    CovalentTextEditorModule
+    ClarityModule
   ],
   providers: [],
   bootstrap: [
