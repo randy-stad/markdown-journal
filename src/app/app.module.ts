@@ -4,12 +4,12 @@ import { ClarityModule } from '@clr/angular';
 import { MarkdownModule } from 'ngx-md';
 
 import { AppComponent } from './app.component';
-import { PreviewCardComponent } from './preview-card/preview-card.component';
+import { PreviewComponent } from './preview/preview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PreviewCardComponent
+    PreviewComponent
   ],
   imports: [
     BrowserModule,
