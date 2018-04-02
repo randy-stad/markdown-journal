@@ -6,7 +6,7 @@ export class ContentService {
   public markdown: string;
 
   constructor() {
-    this.markdown = '# Welcome to Markdown Journal';
+    this.markdown = '# Welcome to Markdown Journal!';
   }
 
 }
