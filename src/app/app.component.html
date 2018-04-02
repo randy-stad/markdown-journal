@@ -21,7 +21,18 @@
       </div>
     </div>
     <nav class="sidenav">
-      ...
+      <clr-tree-node *ngFor="let year of contentService.content">
+        <clr-icon [attr.shape]="year.icon"></clr-icon>
+        {{year.name}}
+        <ng-template [(clrIfExpanded)]="year.expanded">
+          <clr-tree-node *ngFor="let month of year.months">
+            <button (click)="something" class="clr-treenode-link" [class.active]="month.active">
+              <clr-icon [attr.shape]="month.icon"></clr-icon>
+              {{month.name}}
+            </button>
+          </clr-tree-node>
+        </ng-template>
+      </clr-tree-node>
     </nav>
   </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ContentService } from './services/content.service';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   view = 'preview';
-  markdown = '# Welcome to Markdown Journal';
+  constructor(public contentService: ContentService) { }
 }
